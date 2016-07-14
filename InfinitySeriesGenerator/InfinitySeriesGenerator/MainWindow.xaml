@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="numberBox" HorizontalAlignment="Left" Height="23" Margin="34,115,0,0" TextWrapping="Wrap" Text="0000" VerticalAlignment="Top" Width="145" TextChanged="numberBox_TextChanged" PreviewKeyDown="numberBox_PreviewKeyDown"/>
-        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="210,184,0,0" VerticalAlignment="Top" Width="75" Click="saveButton_Click"/>
+        <TextBox x:Name="seriesSizeInput" HorizontalAlignment="Left" Height="23" Margin="34,115,0,0" TextWrapping="Wrap" Text="0000" VerticalAlignment="Top" Width="145" TextChanged="NumberBoxTextChanged" PreviewKeyDown="NumberBoxPreviewKeyDown"/>
+        <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="210,184,0,0" VerticalAlignment="Top" Width="75" Click="SaveButtonClick"/>
         <TextBlock HorizontalAlignment="Left" Margin="34,94,0,0" TextWrapping="Wrap" Text="How Many?" VerticalAlignment="Top" Width="98"/>
         <TextBlock HorizontalAlignment="Left" Margin="109,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294"><Run Text="Infinity Series Generator: Type the desired amount, press save, "/><Run Text="choose a suitable place,"/><Run Text="and done!"/></TextBlock>
-        <ComboBox x:Name="NoteNamesBox" HorizontalAlignment="Left" Margin="356,115,0,0" VerticalAlignment="Top" Width="120" Loaded="NoteNamesBox_Loaded"/>
-        <TextBox x:Name="startBox" HorizontalAlignment="Left" Height="23" Margin="187,115,0,0" TextWrapping="Wrap" Text="0000" VerticalAlignment="Top" Width="145" TextChanged="numberBox_TextChanged" PreviewKeyDown="numberBox_PreviewKeyDown"/>
+        <ComboBox x:Name="NoteNamesBox" HorizontalAlignment="Left" Margin="356,115,0,0" VerticalAlignment="Top" Width="120" Loaded="SetupStartingNoteNameSelector"/>
+        <TextBox x:Name="startingIndexInput" HorizontalAlignment="Left" Height="23" Margin="187,115,0,0" TextWrapping="Wrap" Text="0000" VerticalAlignment="Top" Width="145" TextChanged="NumberBoxTextChanged" PreviewKeyDown="NumberBoxPreviewKeyDown"/>
         <TextBlock HorizontalAlignment="Left" Margin="187,94,0,0" TextWrapping="Wrap" Text="Where shall we start?" VerticalAlignment="Top" Width="119"/>
         <TextBlock HorizontalAlignment="Left" Margin="357,94,0,0" TextWrapping="Wrap" Text="What is the first note?" VerticalAlignment="Top" Width="119"/>
 
