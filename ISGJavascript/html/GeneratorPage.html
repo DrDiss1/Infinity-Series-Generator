@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinity Series Generator</title>
+</head>
+<body>
+<label for="noteChoice">Starting Note</label>
+<select id="noteChoice">
+    <option value="0">C</option>
+    <option value="1">C#</option>
+    <option value="2">D</option>
+    <option value="3">D#</option>
+    <option value="4">E</option>
+    <option value="5">F</option>
+    <option value="6">F#</option>
+    <option value="7">G</option>
+    <option value="8">G#</option>
+    <option value="9">A</option>
+    <option value="10">A#</option>
+    <option value="11">B</option>
+</select>
+<label for="octChoice">Starting Octave</label>
+<select id="octChoice">
+    <option value="-2">-2</option>
+    <option value="-1">-1</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select>
+
+<label for="amountOfNotes">Amount of Notes</label>
+<input type="number" name="amountOfNotes" id="amountOfNotes" min="0" max="1000" />
+
+<label for="noteStart">Start At</label>
+<input type="number" name="noteStart" id="noteStart" min="0" />
+
+<button id="generateButton">Generate</button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/ISGenerator.js"></script>
+
+</body>
+</html>
